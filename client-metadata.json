@@ -6,7 +6,7 @@
   "tos_uri": "https://biskuvi-app.github.io/tos",
   "policy_uri": "https://biskuvi-app.github.io/policy",
   "redirect_uris": ["https://biskuvi-app.github.io/atproto-oauth-callback"],
-  "scope": "atproto",
+  "scope": "atproto transition:generic",
   "grant_types": ["authorization_code", "refresh_token"],
   "response_types": ["code"],
   "application_type": "native",
