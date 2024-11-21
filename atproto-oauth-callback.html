@@ -99,8 +99,7 @@
         <div class="container">
             <h1>Authentication Successful</h1>
             <p>
-                You have been successfully authenticated to Biskuvi. This window
-                will close automatically.
+                You have been successfully authenticated to Biskuvi. You will be redirected automatically to Bluesky.
             </p>
         </div>
 
@@ -124,13 +123,13 @@
 
             // Close the window after a short delay
             setTimeout(() => {
-                window.close();
+                window.location.href = "https://bsky.app"
             }, 3000);
 
             // If the window doesn't close automatically, inform the user
             setTimeout(() => {
                 document.querySelector("p").textContent =
-                    "You can now close this window and return to the application.";
+                    "Redirecting you to Bluesky ...";
             }, 3500);
         </script>
     </body>
